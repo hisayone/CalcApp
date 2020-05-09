@@ -41,13 +41,13 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         }else {
             when(v.id){
                 R.id.plusbutton ->intent.putExtra("VALUE",
-                    edittext1.text.toString().toInt()+edittext2.text.toString().toDouble())
+                    edittext1.text.toString().toDouble()+edittext2.text.toString().toDouble())
                 R.id.minusbutton ->intent.putExtra("VALUE",
-                    edittext1.text.toString().toInt()-edittext2.text.toString().toDouble())
+                    edittext1.text.toString().toDouble()-edittext2.text.toString().toDouble())
                 R.id.multiplybutton ->intent.putExtra("VALUE",
-                    edittext1.text.toString().toInt()*edittext2.text.toString().toDouble())
+                    edittext1.text.toString().toDouble()*edittext2.text.toString().toDouble())
                 R.id.devidebutton ->intent.putExtra("VALUE",
-                    edittext1.text.toString().toInt()/edittext2.text.toString().toDouble())
+                    edittext1.text.toString().toDouble()/edittext2.text.toString().toDouble())
             }
             startActivity(intent)
         }
